@@ -4,7 +4,6 @@ import cv2 as cv
 import mediapipe as mp
 import time 
 
-
 class handdetector():
     def __init__(self, mode = False, maxHands = 2, detectionConfidence = 0.5, trackConfidence = 0.5):
         self.mode = mode
@@ -45,15 +44,8 @@ class handdetector():
                 if draw:
                     cv.circle(img, (cx, cy), 5, (255, 0, 255), cv.FILLED)
         return lmlist
-    
 
-
-
-
-    
-
-
-
+   
 def main(): # dummy tool that'll tell what this module can do
     pTime = 0 
     cTime = 0 
@@ -72,13 +64,8 @@ def main(): # dummy tool that'll tell what this module can do
         
         #cv.putText(img, str(int(fps)), (10, 17), cv.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
 
-
         cv.imshow('image',img) # displays the window with name image
         cv.waitKey(1) # waits fr 1ms for a key press on the window
-
-
-
-
 
 
 if __name__ == "__main__": # checks if we're running this script
