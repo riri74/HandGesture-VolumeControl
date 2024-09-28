@@ -1,2 +1,2 @@
 # volume_hand_control
-Control the volume of your system using your hand
+This project uses pycaw, mediapipe and opencv to control the volume of the system using your index and thumb fingers. 
